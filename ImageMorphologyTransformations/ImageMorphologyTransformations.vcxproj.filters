@@ -18,5 +18,13 @@
     <ClCompile Include="ImageMorphologyTransformations.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DiscreteFourierTransform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DiscreteFourierTransform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

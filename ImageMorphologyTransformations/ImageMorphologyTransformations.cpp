@@ -1,9 +1,15 @@
-﻿// ImageMorphologyTransformations.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿#include <iostream>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc.hpp>
+#include <highgui/highgui.hpp>
+#include "DiscreteFourierTransform.h"
+using namespace cv;
+using std::cout;
+using std::endl;
 
-#include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	DFT_Ops();
+	return 0;
 }
