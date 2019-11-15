@@ -14,12 +14,15 @@ const int EROSION_SIZE = 2;
 void Erosion(int val, void* src);
 void ErosionAndDilation() {
 	Mat src = imread("lena.png", IMREAD_GRAYSCALE);
-	void* user_type[] = { (Mat*)&src,(int*)&EROSION_TYPE };
-	void* user_size[] = { (Mat*)&src,(int*)&EROSION_SIZE };
-
+	vector<void*> user_type;
+	user_type.push_back((Mat*)&src);
+	user_type.push_back((int*)&EROSION_TYPE);
+	vector<void*> user_size;
+	user_size.push_back((Mat*)&src);
+	user_size.push_back((int*)&EROSION_SIZE);
 	namedWindow("win1", WINDOW_GUI_NORMAL);
-	createTrackbar("Type", "win1", NULL, 2, Erosion, (void*)user_type);
-	createTrackbar("Size", "win1", NULL, 20, Erosion, (void*)user_size);
+	createTrackbar("Type", "win1", NULL, 2, Erosion, (void*)&user_type);
+	createTrackbar("Size", "win1", NULL, 20, Erosion, (void*)&user_size);
 	Erosion(0, (void*)&user_type);
 	waitKey(0);
 }
@@ -27,7 +30,8 @@ void ErosionAndDilation() {
 void Erosion(int val,void* src) {
 	static int erosion_type = MORPH_RECT;
 	static int erosion_size = 1;
-	void** user_data = (void**)src;
+	vector<void*> user_data = *(vector<void*>*)src ;
+
 	Mat img = *(Mat*)user_data[0];
 	Mat dst;
 	int p = *(int*)user_data[1];
