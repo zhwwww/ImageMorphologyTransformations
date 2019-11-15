@@ -7,9 +7,10 @@ using namespace cv;
 using std::cout;
 using std::endl;
 
-
+void ErosionAndDilation();
 int main()
 {
-	DFT_Ops();
+	//DFT_Ops();
+	ErosionAndDilation();
 	return 0;
 }

@@ -154,6 +154,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DiscreteFourierTransform.cpp" />
+    <ClCompile Include="ErodingAndDilating.cpp" />
     <ClCompile Include="ImageMorphologyTransformations.cpp" />
   </ItemGroup>
   <ItemGroup>
