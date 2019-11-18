@@ -24,6 +24,21 @@
     <ClCompile Include="ErodingAndDilating.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="HitOrMiss.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HSVInRangeThreshold.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddingBorders.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExactHorizontalAndVerticalLines.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoreMorphologyTransformations.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DiscreteFourierTransform.h">

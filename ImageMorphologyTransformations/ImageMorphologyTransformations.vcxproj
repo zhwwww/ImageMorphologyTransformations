@@ -153,9 +153,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AddingBorders.cpp" />
     <ClCompile Include="DiscreteFourierTransform.cpp" />
     <ClCompile Include="ErodingAndDilating.cpp" />
+    <ClCompile Include="ExactHorizontalAndVerticalLines.cpp" />
+    <ClCompile Include="HitOrMiss.cpp" />
+    <ClCompile Include="HSVInRangeThreshold.cpp" />
     <ClCompile Include="ImageMorphologyTransformations.cpp" />
+    <ClCompile Include="MoreMorphologyTransformations.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DiscreteFourierTransform.h" />
